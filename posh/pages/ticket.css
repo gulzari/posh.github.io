@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1, h3{
+    color: #333333;
+}
+body{
+    font-family: 'Titillium Web', cursive;
+}
+a{
+    text-decoration: none;
+    font-family: 'Titillium Web', cursive;
+    color: rgba(85, 63, 85, 0.933);
+    font-weight: 600;
+}
+a:hover{
+    color: black;
+}
+button{
+    padding: 8px 20px;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    font-family: 'Titillium Web', cursive;
+    font-size: 18px;
+    background-image: linear-gradient(120deg,#fe346e, #feb72b);
+    cursor: pointer;
+    margin: 20px;
+}
+
+button:hover{
+    background-image: linear-gradient(100deg,#fe346e, #feb72b);
+    box-shadow: 0px 0px 8px 2px rgba(254,52,110,0.63);
+}
+label{
+    width: 100%;
+    margin: 15px 20px;
+    font-size: 18px;
+}
+input, select{
+    width: 90%;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    padding: 12px 15px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    background: #ededed;
+    margin-left: 20px;
+}
+select:hover{
+    box-shadow: 0px 0px 8px 0px #ededed;
+}
+input:hover{
+    box-shadow: 0px 0px 8px 0px #ededed;
+}
+.checkbox{
+    margin: 5px;
+    padding: 0;
+    width: auto;
+}
+.term{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 5px;
+    width: 90%;
+    margin: 0 auto;
+}
+.condition{
+    display: flex;
+    align-items: center;
+}
+.btn{
+    text-align: center;
+}
+
+.logo{
+    margin: 20px;
+}
+.menu{
+    margin: 20px;
+}
+
+.ticket h1{
+    margin: 20px auto;
+}
+
+/* Design for Smartphone ...............*/
+@media only screen and (min-width : 320px) and (max-width : 999px){
+    body{ 
+        background: linear-gradient(120deg, rgba(29, 38, 113, 0.5), rgba(102, 204, 255, 0.3)), url("https://images.unsplash.com/photo-1516450137517-162bfbeb8dba?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
+        background-size: cover;
+        width: 100%;
+        height: auto;
+    }
+    a,p,label,h1{
+        color: #e1f4f3;
+    }
+    .items{
+        display: none;
+    }
+    .ticimg img{
+        width: 100%;
+        height: auto;
+    }
+    .dpcontent{
+        display: none;
+    }
+    .ticket{
+        width: 99%;
+        height: auto;
+        border-radius: 15px;
+        margin: 10px auto;
+    }
+}
+
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1000px) {
+    body{ 
+        background: linear-gradient(120deg, rgba(29, 38, 113, 0.5), rgba(102, 204, 255, 0.3)), url("https://images.unsplash.com/photo-1503505946976-e489ce29e0fd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1574&q=80");
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+    }
+    .menu{
+        display: none;
+    }
+    .items{
+        width: 70%;
+    }
+    .items ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        margin-right: 20px;
+    }
+    .ticket{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        max-width: 1000px;
+        margin: 50px auto;
+        background: #deddfa;
+        border-radius: 15px;
+        padding: 20px;
+    }
+    .ticform{
+        width: 50%;
+        height: auto;
+    }
+    .ticimg{
+        width: 40%;
+    }
+    .ticimg img{
+        width: 100%;
+    }
+}

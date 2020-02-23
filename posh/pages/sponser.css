@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1,p{
+    font-family: 'Titillium Web', cursive;
+}
+
+
+.main{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: #deddfa;
+}
+
+
+/* Design for Smartphone ...............*/
+@media only screen and (min-width : 320px) and (max-width : 999px){
+    
+    body{
+        width: 100%;
+        height: 110vh;
+        overflow: hidden;
+        background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url("https://images.unsplash.com/photo-1579389083175-247ef703006f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80");
+        background-size: cover;
+    }
+    .img img{
+        width: 90%;
+        height: auto;
+    }
+    .spon{
+        width: 98%;
+        height: auto;
+        margin: 10px auto;
+        padding: 20px;
+    }
+
+}
+
+
+/* Design for Laptop............*/
+@media only screen and (min-width:1000px){
+    body{
+        width: 100%;
+        height: 110vh;
+        overflow: hidden;
+        background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url("https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+        background-size: cover;
+    }
+    .img img{
+        width: 100%;
+        height: auto;
+    }
+    .text{
+        width: 40%;
+    }
+    .spon{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 95%;
+        margin: 20px auto;
+
+    }
+}
